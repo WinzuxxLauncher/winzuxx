@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Вход — Winzuxx Launcher</title>
+<link rel="icon" type="image/x-icon" href="static/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16.png">
+<link rel="apple-touch-icon" href="static/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div><div class="bg-grid"></div>
+  <nav class="topnav"><a href="login.html" class="nav-link nav-link--accent">Войти</a><a href="register.html" class="nav-link">Регистрация</a></nav>
+  <main class="stage"><div class="content">
+    <p class="eyebrow">с возвращением</p><h1 class="title-sm">Вход в аккаунт</h1>
+    <div class="form-error" id="formError" style="display:none"></div>
+    <form class="auth-form" id="loginForm">
+      <label class="field-label" for="username">Имя пользователя</label>
+      <input class="field-input" type="text" id="username" required>
+      <label class="field-label" for="password">Пароль</label>
+      <input class="field-input" type="password" id="password" required>
+      <button type="submit" class="download-btn auth-submit"><span class="btn-label">Войти</span></button>
+    </form>
+    <p class="hint">Нет аккаунта? <a href="register.html" class="inline-link">Зарегистрироваться</a></p>
+  </div></main>
+  <div class="relocate-overlay"><div class="relocate-modal">
+    <img src="static/img/icon.png" alt="Winzuxx" class="relocate-modal-icon"><p class="relocate-modal-title">Извините</p>
+    <p class="relocate-modal-domain">Сайт временно не работает</p><p class="relocate-modal-warning">Ведутся работы до 31 августа 2026 года</p>
+    <p class="relocate-modal-sign">С уважением, Winzuxx Launcher</p>
+  </div></div>
+<script src="static/app.js"></script>
+</body></html>
